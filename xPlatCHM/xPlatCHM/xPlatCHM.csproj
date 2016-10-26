@@ -36,7 +36,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="DataModels\Activity.cs" />
+    <Compile Include="DataModels\Case.cs" />
+    <Compile Include="DataModels\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DataService.cs" />
+    <Compile Include="ViewModels\ActivityViewModel.cs" />
+    <Compile Include="ViewModels\CaseViewModel.cs" />
+    <Compile Include="ViewModels\ClientViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />

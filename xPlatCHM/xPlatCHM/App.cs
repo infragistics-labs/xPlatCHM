@@ -23,6 +23,11 @@ namespace xPlatCHM
 						{
 							Text = "Load cases",
 							Command = new Command(this.LoadCases)
+						},
+						new Button
+						{
+							Text = "Load case details",
+							Command = new Command(this.LoadCaseDetails)
 						}
 					}
 				}
@@ -49,6 +54,11 @@ namespace xPlatCHM
 		private void LoadCases()
 		{
 			var cases = DataService.Instance.GetCases("InQueue");
+		}
+
+		private void LoadCaseDetails()
+		{
+			var caseDetails = DataService.Instance.GetCaseDetails("CAS-177774-S8K2B5");
 		}
 	}
 }

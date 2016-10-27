@@ -16,13 +16,17 @@ namespace xPlatCHM.Services
 		private const string CouldNotLoadCasesError = "Could not load cases.";
 		private const string CouldNotLoadCaseError = "Could not load case details.";
 		private const string CouldNotLoadSavedSearchesError = "Could not load saved searches.";
-		private const string ActivitiesElementName = "Activities";
+		private const string ActivitiesPropertyName = "Activities";
+		private const string CustomerPropertyName = "Customer";
+		private const string CompanyPropertyName = "Company";
 		private static DataService instance;
 
 		private IDictionary<string, Case[]> mapQueryToListOfCases = new Dictionary<string, Case[]>();
 
 		private DataService() { }
 
+
+		// TODO: use some dependency injection mechanism and remove this singleton
 		public static DataService Instance
 		{
 			get
@@ -152,8 +156,8 @@ namespace xPlatCHM.Services
 
 			var customer = new Customer()
 			{
-				Name = caseJObject.Value<string>("Customer"),
-				Company = caseJObject.Value<string>("Company")
+				Name = caseJObject.Value<string>(CustomerPropertyName),
+				Company = caseJObject.Value<string>(CompanyPropertyName)
 			};
 			currentCase.Customer = customer;
 
@@ -164,7 +168,7 @@ namespace xPlatCHM.Services
 
 		private IEnumerable<Activity> CreateActivities(JObject caseJObject)
 		{
-			var activitiesJArray = caseJObject.Value<JArray>(ActivitiesElementName);
+			var activitiesJArray = caseJObject.Value<JArray>(ActivitiesPropertyName);
 
 			foreach (var activityJObj in activitiesJArray)
 			{

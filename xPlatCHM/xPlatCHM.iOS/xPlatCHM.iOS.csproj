@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>xPlatCHM.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>xPlatCHM.iOS</AssemblyName>
+    <AssemblyName>xPlatCHMiOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>

@@ -11,24 +11,10 @@ namespace xPlatCHM
 	{
 		public App()
 		{
-			// The root page of your application
-			var content = new ContentPage
-			{
-				Title = "xPlatCHM",
-				Content = new StackLayout
-				{
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
-
-			MainPage = new NavigationPage(content);
-		}
+            // The root page of your application
+            var content = new Views.LoginView();
+            MainPage = new NavigationPage(content);
+        }
 
 		protected override void OnStart()
 		{

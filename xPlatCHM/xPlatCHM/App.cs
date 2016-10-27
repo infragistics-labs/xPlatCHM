@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using xPlatCHM.Services;
 
 namespace xPlatCHM
 {
@@ -17,6 +18,11 @@ namespace xPlatCHM
 						new Label {
 							HorizontalTextAlignment = TextAlignment.Center,
 							Text = "Welcome to Xamarin Forms!"
+						},
+						new Button
+						{
+							Text = "Load cases",
+							Command = new Command(this.LoadCases)
 						}
 					}
 				}
@@ -38,6 +44,11 @@ namespace xPlatCHM
 		protected override void OnResume()
 		{
 			// Handle when your app resumes
+		}
+
+		private void LoadCases()
+		{
+			var cases = DataService.Instance.GetCases("InQueue");
 		}
 	}
 }

@@ -13,10 +13,10 @@
                 <DataTemplate>
                   <ViewCell>
                     <StackLayout Orientation="Horizontal">
-                      <Image Source="{Binding icon}" />
-                      <Label Text="{Binding queue}" TextColor="#f35e20" />
-                      <Label Text="{Binding delta}" TextColor="#503026" />
-                      <Image Source="{Binding indication}" />
+                      <!--<Image Source="{Binding IconSource}" />-->
+                      <Label Text="{Binding Title}" TextColor="#f35e20" />
+                      <!--<Label Text="{Binding CasesDelta}" TextColor="#503026" />
+                      <Image Source="{Binding CasesDeltaImageSource}" />-->
                     </StackLayout>
                   </ViewCell>
                 </DataTemplate>

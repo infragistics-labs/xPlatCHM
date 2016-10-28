@@ -42,6 +42,9 @@
     <Compile Include="DataModels\Priority.cs" />
     <Compile Include="DataModels\ServiceLevel.cs" />
     <Compile Include="DataModels\Status.cs" />
+    <Compile Include="Views\CasePage.xaml.cs">
+      <DependentUpon>CasePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CasesView.xaml.cs">
       <DependentUpon>CasesView.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,15 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\CasesView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CasePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

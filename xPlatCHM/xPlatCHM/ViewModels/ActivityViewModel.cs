@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace xPlatCHM.ViewModels
 {
-	public class ActivityViewModel
+	internal class ActivityViewModel
 	{
 	}
 }

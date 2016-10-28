@@ -42,6 +42,7 @@
     <Compile Include="DataModels\Priority.cs" />
     <Compile Include="DataModels\ServiceLevel.cs" />
     <Compile Include="DataModels\Status.cs" />
+    <Compile Include="ViewModels\SavedSearchViewModel.cs" />
     <Compile Include="Views\CasePage.xaml.cs">
       <DependentUpon>CasePage.xaml</DependentUpon>
     </Compile>
@@ -95,7 +96,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="hamburger.png" />
+    <Content Include="Resources\hamburger.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\CasePage.xaml">

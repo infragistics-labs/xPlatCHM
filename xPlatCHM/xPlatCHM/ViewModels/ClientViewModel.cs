@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace xPlatCHM.ViewModels
 {
-	class ClientViewModel
+	internal class ClientViewModel
 	{
 	}
 }

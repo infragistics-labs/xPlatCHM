@@ -42,23 +42,35 @@ namespace xPlatCHM.Services
 
 		public IEnumerable<string> GetSavedSearches()
 		{
-			using (var client = new HttpClient())
+			// TODO: enable this when the API works
+
+			//using (var client = new HttpClient())
+			//{
+			//	var response = client.GetAsync(CRMBaseAddress + SavedSearchesRelativePath).Result;
+
+			//	if (!response.IsSuccessStatusCode)
+			//	{
+			//		throw new InvalidOperationException(CouldNotLoadSavedSearchesError);
+			//	}
+
+			//	var responseText = response.Content.ReadAsStringAsync().Result;
+
+			//	var searchesJArray = (JArray) JsonConvert.DeserializeObject(responseText);
+
+			//	var searches = searchesJArray.Cast<string>();
+
+			//	return searches;
+			//}
+
+			return new List<string>()
 			{
-				var response = client.GetAsync(CRMBaseAddress + SavedSearchesRelativePath).Result;
-
-				if (!response.IsSuccessStatusCode)
-				{
-					throw new InvalidOperationException(CouldNotLoadSavedSearchesError);
-				}
-
-				var responseText = response.Content.ReadAsStringAsync().Result;
-
-				var searchesJArray = (JArray) JsonConvert.DeserializeObject(responseText);
-
-				var searches = searchesJArray.Cast<string>();
-
-				return searches;
-			}
+				"In Queue",
+				"In Progress",
+				"Awaiting",
+				"In Development",
+				"My Active",
+				"All in Queue"
+			};
 		}
 
 		public IEnumerable<Case> GetCases(string queryName)

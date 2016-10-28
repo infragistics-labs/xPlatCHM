@@ -1,25 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:xPlatCHM.Views"
-                   NavigationPage.HasBackButton="False"
+                  NavigationPage.HasBackButton="False"
                   NavigationPage.HasNavigationBar="False"
-             x:Class="xPlatCHM.Views.CasesView">
+                  x:Class="xPlatCHM.Views.CasesView">
     <MasterDetailPage.Master>
         <ContentPage Title="menu">
           <StackLayout Padding="30" >
-            <ListView x:Name="Queues">
+            <ListView x:Name="savedQueuesListView">
               <ListView.ItemTemplate>
                 <DataTemplate>
                   <ViewCell>
                     <StackLayout Orientation="Horizontal">
+                      <Image Source="{Binding icon}" />
                       <Label Text="{Binding queue}" TextColor="#f35e20" />
                       <Label Text="{Binding delta}" TextColor="#503026" />
+                      <Image Source="{Binding indication}" />
                     </StackLayout>
                   </ViewCell>
                 </DataTemplate>
               </ListView.ItemTemplate>
             </ListView>
+            <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand">
+              <Label Text="Created at" TextColor="Black" FontFamily="Roboto" FontSize="12" />
+              <Image Source="iglogo.png" Margin="0,0,50,0"/>
+            </StackLayout>
           </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

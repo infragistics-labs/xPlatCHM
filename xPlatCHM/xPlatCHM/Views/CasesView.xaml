@@ -1,6 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:xPlatCHM.Views"
+                   NavigationPage.HasBackButton="False"
+                  NavigationPage.HasNavigationBar="False"
              x:Class="xPlatCHM.Views.CasesView">
-  <Label Text="asda" VerticalOptions="Center" HorizontalOptions="Center" />
-</ContentPage>
+    <MasterDetailPage.Master>
+        <ContentPage Title="testpage">
+            <Label Text="State test text!"/>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:CasePage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

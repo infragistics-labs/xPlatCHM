@@ -128,6 +128,7 @@
     <Content Include="caller.png" />
     <AndroidResource Include="tag.png" />
     <AndroidResource Include="IG.png" />
+    <AndroidResource Include="up-arrow.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

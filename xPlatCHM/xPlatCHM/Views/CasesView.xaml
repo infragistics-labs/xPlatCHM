@@ -7,21 +7,25 @@
                   x:Class="xPlatCHM.Views.CasesView">
     <MasterDetailPage.Master>
         <ContentPage Title="menu">
-          <StackLayout Padding="30" >
+          <StackLayout Padding="20" >
             <ListView x:Name="savedQueuesListView">
               <ListView.ItemTemplate>
                 <DataTemplate>
                   <ViewCell>
                     <StackLayout Orientation="Horizontal">
-                      <Image Source="{Binding IconSource}" />
-                      <Label Text="{Binding Title}" TextColor="Black" FontFamily="Roboto" FontSize="16" VerticalOptions="Center" />
-                      <Label Text="{Binding CasesDelta}" TextColor="Black" FontFamily="Roboto" FontSize="16" VerticalOptions="Center" />
-                      <!--<Image Source="{Binding CaseDeltaImageSource}" />-->
+                      <Image Source="{Binding IconSource}" Margin="0,0,20,0"/>
+                      <Label Text="{Binding Title}" TextColor="Black" FontFamily="Roboto" FontSize="16" VerticalOptions="Center" Margin="0,0,10,0"/>
+                      <Label Text="{Binding CasesDelta}" TextColor="Black" FontFamily="Roboto" FontSize="16" VerticalOptions="Center"/>
+                      <Image Source="{Binding CasesDeltaImageSource}" Margin="10,0,0,0"/>
                     </StackLayout>
                   </ViewCell>
                 </DataTemplate>
               </ListView.ItemTemplate>
             </ListView>
+            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" Margin="0,0,0,0">
+              <Image Source="tag.png" Margin="0,0,20,0"/>
+              <Label Text="Log out" TextColor="Black" FontFamily="Roboto" FontSize="12"/>
+            </StackLayout>
             <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" Margin="0,0,50,0">
               <Label Text="Created at" TextColor="Black" FontFamily="Roboto" FontSize="12" />
               <Image Source="IG.png" />

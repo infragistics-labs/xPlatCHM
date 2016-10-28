@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Icon="hamburger.png"
+             Icon="resources\hamburger.png"
              Title="In Progress"
              x:Class="xPlatCHM.Views.CasePage">
   <ContentPage.Content>

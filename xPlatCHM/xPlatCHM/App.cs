@@ -1,5 +1,4 @@
 ﻿using Xamarin.Forms;
-using xPlatCHM.Services;
 
 namespace xPlatCHM
 {
@@ -25,11 +24,6 @@ namespace xPlatCHM
 		protected override void OnResume()
 		{
 			// Handle when your app resumes
-		}
-
-		private void LoadCases()
-		{
-			var cases = DataService.Instance.GetCases("InQueue");
 		}
 	}
 }

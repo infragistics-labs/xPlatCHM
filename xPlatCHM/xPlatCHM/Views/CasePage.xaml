@@ -8,6 +8,15 @@
         <StackLayout >
             <SearchBar Placeholder="Search"/>
             <ListView   x:Name="CasesList">
+              <ListView.ItemTemplate>
+                <DataTemplate>
+                  <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                      <Label Text="{Binding caseID}" TextColor="#f35e20" />
+                    </StackLayout>
+                  </ViewCell>
+                </DataTemplate>
+              </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>

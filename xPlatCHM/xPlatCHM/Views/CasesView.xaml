@@ -6,8 +6,21 @@
                   NavigationPage.HasNavigationBar="False"
              x:Class="xPlatCHM.Views.CasesView">
     <MasterDetailPage.Master>
-        <ContentPage Title="testpage">
-            <Label Text="State test text!"/>
+        <ContentPage Title="menu">
+          <StackLayout Padding="30" >
+            <ListView x:Name="Queues">
+              <ListView.ItemTemplate>
+                <DataTemplate>
+                  <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                      <Label Text="{Binding queue}" TextColor="#f35e20" />
+                      <Label Text="{Binding delta}" TextColor="#503026" />
+                    </StackLayout>
+                  </ViewCell>
+                </DataTemplate>
+              </ListView.ItemTemplate>
+            </ListView>
+          </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>

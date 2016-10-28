@@ -1,21 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="login"
-             x:Class="xPlatCHM.Views.LoginView">
-    <ContentPage.Resources>
-        <!--<ResourceDictionary>
-            <Style x:Key="entryStyle" TargetType="Entry">
-                <Setter Property="" Value="Red"/>
-                <Setter Property="FontSize" Value="30"/>
-            </Style>
-        </ResourceDictionary>-->
-    </ContentPage.Resources>
-    <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" Padding="30">
+             x:Class="xPlatCHM.Views.LoginView"
+             BackgroundColor="#0099ff">
 
-            <Entry x:Name="usernameEntry" Placeholder="e-mail"  />
-            <Entry  x:Name="passwordEntry" IsPassword="True" Placeholder="password"/>
-            <Button Text="Login" Clicked="Button_Clicked" HorizontalOptions="Center"/>
+    <ContentPage.Content>    
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="30" >
+
+            <Image Source="caller.png" HeightRequest="200" WidthRequest="200"/>
+            <Label Text="Infragenta" HorizontalOptions="Center" FontFamily="Roboto" FontSize="60" TextColor="White" Margin="0,0,0,70"/>
+            <Entry x:Name="usernameEntry" Placeholder="Infragistics e-mail" FontFamily="Roboto" FontSize="20" TextColor="White" PlaceholderColor="White" Margin="0,0,0,30"/>
+            <Entry  x:Name="passwordEntry" IsPassword="True" Placeholder="Password" FontFamily="Roboto" FontSize="20" TextColor="White" PlaceholderColor="White" Margin="0,0,0,30"/>
+            <Button Text="Login" Clicked="Button_Clicked" HorizontalOptions="Center" BackgroundColor="White" WidthRequest="420" HeightRequest="60"/>
 
         </StackLayout>
 

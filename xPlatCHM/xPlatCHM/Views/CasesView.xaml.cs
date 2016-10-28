@@ -30,6 +30,7 @@ namespace xPlatCHM.Views
 					CasesDeltaImageSource = @"resources\up-arrow.png",
 					TargetType = null
 				};
+				masterPageItems.Add(model);
 			}
 
 			return masterPageItems;

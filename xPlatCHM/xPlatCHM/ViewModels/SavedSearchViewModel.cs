@@ -12,8 +12,6 @@ namespace xPlatCHM.ViewModels
 
 		public string CasesDeltaImageSource { get; set; }
 
-		public Type TargetType { get; set; }
-
 		public bool IsSelected { get; set; }
 	}
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 using Xamarin.Forms;
 using xPlatCHM.Services;
@@ -13,7 +14,22 @@ namespace xPlatCHM.Views
             InitializeComponent();
 
 			this.savedQueuesListView.ItemsSource = this.CreateSavedSearchesList();
+
+			this.savedQueuesListView.ItemSelected += OnQueryChanged;
         }
+
+		private void OnQueryChanged(object sender, SelectedItemChangedEventArgs e)
+		{
+			var item = e.SelectedItem as SavedSearchViewModel;
+			if (item != null)
+			{
+				var casesPage = new CasePage();
+				this.Detail = new NavigationPage(casesPage);
+				this.IsPresented = false;
+
+				casesPage.LoadCases(item.Title);
+			}
+		}
 
 		private IList<SavedSearchViewModel> CreateSavedSearchesList()
 		{
@@ -24,11 +40,10 @@ namespace xPlatCHM.Views
 				var model = new SavedSearchViewModel()
 				{
 					Title = savedSearch,
-					IconSource = @"resources\tag.png",
+					IconSource = "tag.png",
 					IsSelected = false,
 					CasesDelta = 3,
-					CasesDeltaImageSource = @"resources\up-arrow.png",
-					TargetType = null
+					CasesDeltaImageSource = "up-arrow.png"
 				};
 				masterPageItems.Add(model);
 			}

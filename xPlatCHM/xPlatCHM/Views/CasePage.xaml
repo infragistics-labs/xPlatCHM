@@ -7,12 +7,12 @@
   <ContentPage.Content>
         <StackLayout >
             <SearchBar Placeholder="Search"/>
-            <ListView   x:Name="CasesList">
+            <ListView x:Name="casesListView">
               <ListView.ItemTemplate>
                 <DataTemplate>
                   <ViewCell>
                     <StackLayout Orientation="Horizontal">
-                      <Label Text="{Binding caseID}" TextColor="#f35e20" />
+                      <Label Text="{Binding CaseNumber}" TextColor="#f35e20" />
                     </StackLayout>
                   </ViewCell>
                 </DataTemplate>

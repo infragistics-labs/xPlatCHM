@@ -13,18 +13,18 @@
                 <DataTemplate>
                   <ViewCell>
                     <StackLayout Orientation="Horizontal">
-                      <Image Source="{Binding icon}" />
-                      <Label Text="{Binding queue}" TextColor="#f35e20" />
-                      <Label Text="{Binding delta}" TextColor="#503026" />
-                      <Image Source="{Binding indication}" />
+                      <Image Source="{Binding IconSource}" />
+                      <Label Text="{Binding Title}" TextColor="Black" FontFamily="Roboto" FontSize="16" VerticalOptions="Center" />
+                      <Label Text="{Binding CasesDelta}" TextColor="Black" FontFamily="Roboto" FontSize="16" VerticalOptions="Center" />
+                      <!--<Image Source="{Binding CaseDeltaImageSource}" />-->
                     </StackLayout>
                   </ViewCell>
                 </DataTemplate>
               </ListView.ItemTemplate>
             </ListView>
-            <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand">
+            <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand" Margin="0,0,50,0">
               <Label Text="Created at" TextColor="Black" FontFamily="Roboto" FontSize="12" />
-              <Image Source="iglogo.png" Margin="0,0,50,0"/>
+              <Image Source="IG.png" />
             </StackLayout>
           </StackLayout>
         </ContentPage>

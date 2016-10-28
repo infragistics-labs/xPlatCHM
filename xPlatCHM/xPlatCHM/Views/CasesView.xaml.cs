@@ -24,10 +24,10 @@ namespace xPlatCHM.Views
 				var model = new SavedSearchViewModel()
 				{
 					Title = savedSearch,
-					IconSource = @"resources\tag.png",
+					IconSource = "tag.png",
 					IsSelected = false,
 					CasesDelta = 3,
-					CasesDeltaImageSource = @"resources\up-arrow.png",
+					CasesDeltaImageSource = "up-arrow.png",
 					TargetType = null
 				};
 				masterPageItems.Add(model);

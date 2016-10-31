@@ -126,6 +126,9 @@
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="caller.png" />
+    <AndroidResource Include="tag.png" />
+    <AndroidResource Include="IG.png" />
+    <AndroidResource Include="up-arrow.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

@@ -121,6 +121,7 @@
     <None Include="Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\hamburger.png" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
@@ -128,7 +129,7 @@
     <Content Include="caller.png" />
     <AndroidResource Include="tag.png" />
     <AndroidResource Include="IG.png" />
-    <AndroidResource Include="up-arrow.png" />
+    <AndroidResource Include="uparrow.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

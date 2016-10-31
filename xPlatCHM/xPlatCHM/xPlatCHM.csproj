@@ -96,9 +96,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\hamburger.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Views\CasePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>

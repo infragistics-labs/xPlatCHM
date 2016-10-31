@@ -43,7 +43,7 @@ namespace xPlatCHM.Views
 					IconSource = "tag.png",
 					IsSelected = false,
 					CasesDelta = 3,
-					CasesDeltaImageSource = "up-arrow.png"
+					CasesDeltaImageSource = "uparrow.png"
 				};
 				masterPageItems.Add(model);
 			}

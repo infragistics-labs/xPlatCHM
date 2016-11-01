@@ -60,6 +60,14 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.2.127\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.5.207081303-alpha\lib\MonoAndroid10\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.5.207081303-alpha\lib\MonoAndroid10\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
@@ -198,10 +206,10 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\uparrow.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\drawable-hdpi\hamburger.png" />
-    <Content Include="Resources\drawable-xhdpi\hamburger.png" />
-    <Content Include="Resources\drawable-xxhdpi\hamburger.png" />
-    <Content Include="Resources\drawable\hamburger.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\hamburger.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\hamburger.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\hamburger.png" />
+    <AndroidResource Include="Resources\drawable\hamburger.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

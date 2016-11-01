@@ -17,7 +17,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -162,18 +162,6 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\caller.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\tag.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\tag.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\tag.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\tag.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\IG.png" />
   </ItemGroup>
   <ItemGroup>
@@ -186,22 +174,30 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\IG.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\uparrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\uparrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\uparrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\uparrow.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\people.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\downarrow.png" />
     <Content Include="Resources\drawable-hdpi\hamburger.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tag.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\people.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\oval.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\uparrow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\downarrow.png" />
     <Content Include="Resources\drawable-xhdpi\hamburger.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tag.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\people.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\uparrow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\oval.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\downarrow.png" />
     <Content Include="Resources\drawable-xxhdpi\hamburger.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tag.png" />
+    <AndroidResource Include="Resources\drawable\people.png" />
+    <AndroidResource Include="Resources\drawable\downarrow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\uparrow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\oval.png" />
     <Content Include="Resources\drawable\hamburger.png" />
+    <AndroidResource Include="Resources\drawable\tag.png" />
+    <AndroidResource Include="Resources\drawable\oval.png" />
+    <AndroidResource Include="Resources\drawable\uparrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

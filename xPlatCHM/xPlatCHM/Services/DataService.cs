@@ -65,12 +65,12 @@ namespace xPlatCHM.Services
 			return new List<string>()
 			{
 				"In Queue",
-				"In Progress",
-				"Awaiting",
-				"In Development",
-				"My Active",
-				"All in Queue"
-			};
+                "In Progress",
+                "Awaiting",
+                "In Development",
+                "My Active",
+                "All in Queue"
+            };
 		}
 
 		public IEnumerable<Case> GetCases(string queryName)

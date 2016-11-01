@@ -6,13 +6,29 @@
              x:Class="xPlatCHM.Views.CasePage">
   <ContentPage.Content>
         <StackLayout >
-            <SearchBar Placeholder="Search"/>
-            <ListView x:Name="casesListView">
+            <StackLayout Orientation="Vertical" BackgroundColor="#0099ff">
+              <SearchBar Placeholder="Search" PlaceholderColor="White" TextColor="White" FontFamily="Roboto" FontSize="16"/>
+              <StackLayout Orientation="Horizontal" HeightRequest="40" VerticalOptions="Center" Margin="20,0,20,0">
+                <Label Text="Case" TextColor="White" FontAttributes="Bold" FontFamily="Roboto" FontSize="12" VerticalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                  <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="90" Margin="-20,0,0,0">
+                    <Label Text="Service" TextColor="White" FontFamily="Roboto" FontSize="12" VerticalOptions="Center"/>
+                    <Image Source="arrowdropdown.png" Margin="-10,0,0,0"/>
+                  </StackLayout>
+                  <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="60" Margin="-20,0,0,0">
+                    <Label Text="Due" TextColor="White" FontFamily="Roboto" FontSize="12" VerticalOptions="Center"/>
+                    <Image Source="arrowdropdown.png" Margin="-10,0,0,0" IsVisible="False"/>
+                  </StackLayout>
+                  <Button Image="more.png" WidthRequest="20" BackgroundColor="Transparent" Margin="-20,0,0,0"/>
+                </StackLayout>
+              </StackLayout>
+            </StackLayout>
+            <ListView x:Name="casesListView" VerticalOptions="Start">
               <ListView.ItemTemplate>
                 <DataTemplate>
                   <ViewCell>
-                    <StackLayout Orientation="Horizontal">
-                      <Label Text="{Binding CaseNumber}" TextColor="#f35e20" />
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                      <Label Text="{Binding Title}" TextColor="Black" FontFamily="Roboto" FontSize="16"/>
                     </StackLayout>
                   </ViewCell>
                 </DataTemplate>

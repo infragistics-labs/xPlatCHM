@@ -1,9 +1,12 @@
-﻿using Xamarin.Forms;
+﻿using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using Xamarin.Forms;
 
 namespace xPlatCHM
 {
 	public class App : Application
 	{
+		public IPlatformParameters PlatformParameters { get; set; }
+
 		public App()
 		{
             // The root page of your application
@@ -11,9 +14,10 @@ namespace xPlatCHM
             MainPage = new NavigationPage(content);
         }
 
-		protected override void OnStart()
+		protected override async void OnStart()
 		{
 			// Handle when your app starts
+			await Views.LoginView.Authenticate(this.PlatformParameters);
 		}
 
 		protected override void OnSleep()

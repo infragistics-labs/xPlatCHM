@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Content;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 namespace xPlatCHM.Droid
 {
@@ -20,7 +22,17 @@ namespace xPlatCHM.Droid
 			base.OnCreate(bundle);
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
-			LoadApplication(new App());
+
+			var app = new App();
+			app.PlatformParameters = new PlatformParameters(this);
+
+			LoadApplication(app);
+		}
+
+		protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+		{
+			base.OnActivityResult(requestCode, resultCode, data);
+			AuthenticationAgentContinuationHelper.SetAuthenticationAgentContinuationEventArgs(requestCode, resultCode, data);
 		}
 	}
 }

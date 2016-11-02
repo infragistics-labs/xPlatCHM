@@ -147,16 +147,16 @@
     <BundleResource Include="Resources\caller.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\tag.png" />
+    <BundleResource Include="Resources\tag.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\IG.png" />
+    <BundleResource Include="Resources\IG.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\uparrow.png" />
+    <BundleResource Include="Resources\uparrow.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\hamburger.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

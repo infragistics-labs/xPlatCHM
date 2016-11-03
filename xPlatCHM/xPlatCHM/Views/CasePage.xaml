@@ -12,7 +12,7 @@
                 <Label Text="Case" TextColor="White" FontAttributes="Bold" FontFamily="Roboto" FontSize="12" VerticalOptions="Center"/>
                 <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="EndAndExpand">
                   <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="90" Margin="-20,0,0,0">
-                    <Label Text="Service" TextColor="White" FontFamily="Roboto" FontSize="12" VerticalOptions="Center"/>
+                    <Label Text="Service" TextColor="White" FontFamily="Roboto" FontSize="12" FontAttributes="Bold" VerticalOptions="Center"/>
                     <Image Source="arrowdropdown.png" Margin="-10,0,0,0"/>
                   </StackLayout>
                   <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="60" Margin="-20,0,0,0">
@@ -23,12 +23,21 @@
                 </StackLayout>
               </StackLayout>
             </StackLayout>
-            <ListView x:Name="casesListView" VerticalOptions="Start">
+            <ListView x:Name="casesListView" VerticalOptions="Start" SeparatorVisibility="None" RowHeight="80">
               <ListView.ItemTemplate>
                 <DataTemplate>
                   <ViewCell>
+                    <StackLayout Orientation="Vertical" Margin="20,10,0,20">
+                      <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                      <Image Source="formicon.png" VerticalOptions="Center"/>
+                      <Label Text="{Binding CaseNumber}" TextColor="#0099ff" FontFamily="Roboto" FontSize="16" VerticalOptions="Center"/>
+                      <Label Text="{Binding ServiceLevel}" TextColor="#0099ff" HorizontalTextAlignment="Center" FontFamily="Roboto" FontSize="12" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="80" HorizontalOptions="EndAndExpand" Margin="0,0,-96,0"/>
+                      <Label Text="5" TextColor="#0099ff" HorizontalTextAlignment="Center" FontFamily="Roboto" FontSize="12" VerticalOptions="Center" WidthRequest="20" HorizontalOptions="EndAndExpand" Margin="0,0,66,0"/>
+                    </StackLayout>
                     <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                      <Label Text="{Binding Title}" TextColor="Black" FontFamily="Roboto" FontSize="16"/>
+                      <Label Text="{Binding Component}" TextColor="Black" FontFamily="Roboto" FontSize="12" VerticalOptions="Center" WidthRequest="100"/>
+                      <Label Text="{Binding Product}" TextColor="Black" FontFamily="Roboto" FontSize="12" VerticalOptions="Center"/>
+                    </StackLayout>
                     </StackLayout>
                   </ViewCell>
                 </DataTemplate>

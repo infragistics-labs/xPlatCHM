@@ -8,7 +8,7 @@
     <MasterDetailPage.Master>
         <ContentPage Title="menu">
           <StackLayout Padding="20">
-            <ListView x:Name="savedQueuesListView" VerticalOptions="Start" HeightRequest="270">
+            <ListView x:Name="savedQueuesListView" VerticalOptions="Start" HeightRequest="280" SeparatorVisibility="None">
               <ListView.ItemTemplate>
                 <DataTemplate>
                   <ViewCell>

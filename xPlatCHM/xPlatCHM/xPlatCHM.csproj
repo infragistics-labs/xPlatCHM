@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Common\User.cs" />
     <Compile Include="DataModels\Activity.cs" />
     <Compile Include="DataModels\Case.cs" />
     <Compile Include="DataModels\Customer.cs" />

@@ -17,7 +17,9 @@ namespace xPlatCHM
 		protected override async void OnStart()
 		{
 			// Handle when your app starts
-			await Views.LoginView.Authenticate(this.PlatformParameters);
+
+			// TODO: uncomment when the Azure login is working
+			//await Views.LoginView.Authenticate(this.PlatformParameters);
 		}
 
 		protected override void OnSleep()

@@ -9,7 +9,8 @@
             <Image Source="caller.png" WidthRequest="150" HeightRequest="150"/>
             <Label Text="Infragenta" HorizontalOptions="Center" FontFamily="Roboto" FontSize="40" TextColor="White" Margin="0,0,0,30"/>
             <Entry x:Name="usernameEntry" Placeholder="Infragistics e-mail" FontFamily="Roboto" FontSize="16" TextColor="White" PlaceholderColor="White" Margin="0,0,0,15"/>
-            <Entry  x:Name="passwordEntry" IsPassword="True" Placeholder="Password" FontFamily="Roboto" FontSize="16" TextColor="White" PlaceholderColor="White" Margin="0,0,0,15"/>
+            <Entry x:Name="passwordEntry" IsPassword="True" Placeholder="Password" FontFamily="Roboto" FontSize="16" TextColor="White" PlaceholderColor="White" Margin="0,0,0,15"/>
+            <Label x:Name="lblIncorrectCredentials" Text="Incorrect credentials!" VisualElement.IsVisible="false" TextColor="Red"/>
             <Button x:Name="btnLogin" Text="Login" Clicked="LoginBtn_Clicked" HorizontalOptions="Center" BackgroundColor="White" WidthRequest="420" HeightRequest="60"/>
         </StackLayout>
     </ContentPage.Content>

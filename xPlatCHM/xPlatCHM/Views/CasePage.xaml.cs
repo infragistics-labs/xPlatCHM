@@ -1,6 +1,7 @@
-﻿using System.Linq;
+﻿using Acr.UserDialogs;
+using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
-using xPlatCHM.DataModels;
 using xPlatCHM.Services;
 using xPlatCHM.ViewModels;
 
@@ -13,11 +14,18 @@ namespace xPlatCHM.Views
             InitializeComponent();
         }
 
-		public void LoadCases(string queryName)
+		public async Task LoadCases(string queryName)
 		{
-			var cases = DataService.Instance.GetCases(queryName);
+			UserDialogs.Instance.ShowLoading("Loading cases ...");
+
+			var cases = await Task.Factory.StartNew(() =>
+			{
+				return DataService.Instance.GetCases(queryName);
+			});
 
 			this.casesListView.ItemsSource = cases.Select(x => new CaseViewModel(x));
+
+			UserDialogs.Instance.HideLoading();
 		}
     }
 }

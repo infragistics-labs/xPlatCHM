@@ -1,5 +1,7 @@
-﻿using Microsoft.IdentityModel.Clients.ActiveDirectory;
+﻿using Acr.UserDialogs;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -35,15 +37,28 @@ namespace xPlatCHM.Views
 
 		private async void LoginBtn_Clicked(object sender, EventArgs e)
 		{
-			if (this.CheckUserCredentials(this.usernameEntry.Text, this.passwordEntry.Text))
-			{
-				LoggedUser = new User(this.usernameEntry.Text, this.passwordEntry.Text);
+			UserDialogs.Instance.ShowLoading("Logging in ...");
 
-				await Navigation.PushAsync(new CasesView());
-			}
-			else
+			var loginResult = await Task.Factory.StartNew(() =>
 			{
-				this.lblIncorrectCredentials.IsVisible = true;
+				if (this.CheckUserCredentials(this.usernameEntry.Text, this.passwordEntry.Text))
+				{
+					LoggedUser = new User(this.usernameEntry.Text, this.passwordEntry.Text);
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			});
+
+			this.lblIncorrectCredentials.IsVisible = !loginResult;
+
+			UserDialogs.Instance.HideLoading();
+
+			if (loginResult)
+			{
+				Navigation.PushAsync(new CasesView());
 			}
 		}
 

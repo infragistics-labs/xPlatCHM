@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿using System.Collections.Generic;
 using Xamarin.Forms;
 using xPlatCHM.Services;
 using xPlatCHM.ViewModels;
@@ -18,7 +16,7 @@ namespace xPlatCHM.Views
 			this.savedQueuesListView.ItemSelected += OnQueryChanged;
         }
 
-		private void OnQueryChanged(object sender, SelectedItemChangedEventArgs e)
+		private async void OnQueryChanged(object sender, SelectedItemChangedEventArgs e)
 		{
 			var item = e.SelectedItem as SavedSearchViewModel;
 			if (item != null)
@@ -27,7 +25,7 @@ namespace xPlatCHM.Views
 				this.Detail = new NavigationPage(casesPage);
 				this.IsPresented = false;
 
-				casesPage.LoadCases(item.Title);
+				await casesPage.LoadCases(item.Title);
 			}
 		}
 

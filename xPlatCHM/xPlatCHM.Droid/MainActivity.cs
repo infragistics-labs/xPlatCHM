@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Content;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using Acr.UserDialogs;
 
 namespace xPlatCHM.Droid
 {
@@ -25,6 +26,8 @@ namespace xPlatCHM.Droid
 
 			var app = new App();
 			app.PlatformParameters = new PlatformParameters(this);
+
+			UserDialogs.Init(this);
 
 			LoadApplication(app);
 		}

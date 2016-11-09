@@ -1,0 +1,53 @@
+<?Infragistics.Models format="xaml" version="3" appVersion="7.0.3000.36"?>
+<ScreenPart xmlns="http://prototypes.infragistics.com/"
+                                                                                        xmlns:d="http://prototypes.infragistics.com/views/design"
+                                                                                        xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                        Id="9febc402-0618-4fd2-a09c-99694c7f58dd" d:Design.ShowGuides="False">
+    <ScreenPart.Content>
+        <BorderedContent Width="377" Height="647" Background="#00FFFFFF" Id="36eed8e1-4c36-49e0-90d6-2b63747d2525">
+            <BorderedContent.Layers>
+                <Layer Id="9f43e3f3-73ff-488e-b536-e186b491d92d" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="a24c396b-7b28-4d41-863e-faf8173c4f1f" Panel.Layout="Stretch" />
+            </BorderedContent.Layers>
+            <BorderedContent.Viewbox>
+                <Viewbox Id="5cd55703-2ff5-4fec-8aaa-9eb4695bb9ae" />
+            </BorderedContent.Viewbox>
+            <BorderedContent.GuidesInfo>
+                <GuidesInfo Id="1e1eff06-27f8-4334-b6cf-d86b11ccda5a" />
+            </BorderedContent.GuidesInfo>
+        </BorderedContent>
+    </ScreenPart.Content>
+    <ScreenPart.Device>
+        <DeviceInfo Id="none" Orientation="None" />
+    </ScreenPart.Device>
+    <ScreenPart.Scenes>
+        <Scene Title="Initial state" Created="10/25/2016 09:05:03" Id="bde41799-ed29-4489-84dc-cf807e8425ec">
+            <Scene.KeyFrames>
+                <KeyFrame Id="cace5fe8-712a-47c2-994a-1d515cb49ae4">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="9f43e3f3-73ff-488e-b536-e186b491d92d">
+                            <Add.Item>
+                                <Rectangle Id="55369715-7137-48ab-8914-0a92caf5639b" Panel.Bounds="0,0,377{5,2147483647},647{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="9f43e3f3-73ff-488e-b536-e186b491d92d">
+                            <Add.Item>
+                                <i:TextField WatermarkText="e-mail" Border="#FF383838" Foreground="#FF383838" FontSize="18" FontFamily="Open Sans" Id="f1b57d1f-9a14-4c5d-9a0a-31300165b286" Panel.Bounds="43,238,290{22,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="9f43e3f3-73ff-488e-b536-e186b491d92d">
+                            <Add.Item>
+                                <i:PasswordField WatermarkText="password" Border="#FF383838" Foreground="#FF383838" FontSize="18" FontFamily="Open Sans" Id="4e245379-2d33-4f1c-8b52-fdeba2e96d74" Panel.Bounds="43,295,290{22,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="9f43e3f3-73ff-488e-b536-e186b491d92d">
+                            <Add.Item>
+                                <i:Button Text="Login" BorderColor="#FF007AFF" CornerRadius="10" BorderThickness="1" FontSize="20" FontFamily="Open Sans" Id="84ec55d4-6551-4794-b121-4883237cb13a" Panel.Bounds="129,352,119{16,2147483647},42{16,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </ScreenPart.Scenes>
+</ScreenPart>

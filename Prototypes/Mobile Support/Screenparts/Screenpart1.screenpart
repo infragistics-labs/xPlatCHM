@@ -1,0 +1,93 @@
+<?Infragistics.Models format="xaml" version="3" appVersion="7.0.3000.36"?>
+<ScreenPart xmlns="http://prototypes.infragistics.com/"
+                                                                                        xmlns:d="http://prototypes.infragistics.com/views/design"
+                                                                                        xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                        Id="2421689a-8ce6-468d-adf5-f98f16277bab" d:Design.ShowGuides="False">
+    <ScreenPart.Content>
+        <BorderedContent Width="375" Height="183" Background="#00FFFFFF" Id="1a2254cb-8a12-4cab-a1ed-d6f83f34618d">
+            <BorderedContent.Layers>
+                <Layer Id="8c7af992-5069-4943-80ea-959674bc946e" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="922e0e46-6392-4d5f-9b17-21e7dc9de20a" Panel.Layout="Stretch" />
+            </BorderedContent.Layers>
+            <BorderedContent.Viewbox>
+                <Viewbox Id="7eff8e00-6f30-4380-89c6-09e32fbb58d8" />
+            </BorderedContent.Viewbox>
+            <BorderedContent.GuidesInfo>
+                <GuidesInfo Id="a220c0cb-8c43-4242-adce-b6e170ef07e9" />
+            </BorderedContent.GuidesInfo>
+        </BorderedContent>
+    </ScreenPart.Content>
+    <ScreenPart.Device>
+        <DeviceInfo Id="none" Orientation="None" />
+    </ScreenPart.Device>
+    <ScreenPart.Scenes>
+        <Scene Title="Initial state" Created="10/25/2016 10:06:21" Id="f425e8a7-871b-470f-86f3-8a93613f01bc">
+            <Scene.KeyFrames>
+                <KeyFrame Id="62702c0f-5363-4786-ba97-d9afdc796df6">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <Rectangle Id="34f58d16-73e1-4043-8d91-7569bb36d56b" Panel.Bounds="0,0,376{5,2147483647},48{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <i:Label RichText="From" Foreground="#FF717171" FontSize="12" Id="378c1798-7858-466f-a3a8-ffaec0b67801" Panel.Bounds="83,6,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <i:Label RichText="Nikolov, Zhivko" Foreground="#FF000000" FontSize="16" Id="4523c782-592b-44a6-b55f-4d6f95eb5ab5" Panel.Bounds="83,20,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <i:Label RichText="To" Foreground="#FF717171" FontSize="12" Id="82924ef1-df9f-4393-8785-ebe7a529a736" Panel.Bounds="238,6,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <i:Label RichText="siddiqui, Nadeem" Foreground="#FF000000" FontSize="16" Id="d764044f-63ab-4727-8e8d-b67fe59e6d54" Panel.Bounds="238,20,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <i:Label RichText="Public" Foreground="#FF717171" FontSize="12" Id="8c801a29-6816-490d-be0b-8d7a5c181f4d" Panel.Bounds="11,6,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <Icon Color="#FF3BAF4A" CatalogId="fa-check-circle" Id="6ead0c31-bfaa-4664-ad71-5d63ce04fa4e" Panel.Bounds="20,23,16{5,2147483647},16{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <Label RichText="Follow Up" Foreground="#FF000000" FontFamily="Open Sans" Id="02c184eb-4479-4a84-9c52-5363e6d789bf" Panel.Bounds="10,53,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Before="34f58d16-73e1-4043-8d91-7569bb36d56b" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <Rectangle Id="0bcf28e8-3a0f-4418-88d2-824e49512d7b" Panel.Bounds="0,47,376{5,2147483647},31{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Before="0bcf28e8-3a0f-4418-88d2-824e49512d7b" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <Rectangle Id="0bb3a273-1505-45e2-871c-a0f29ad16c68" Panel.Bounds="0,0,376{5,2147483647},183{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <Label RichText="on 23 Oct 2016 16:59 EST" Foreground="#FF717171" FontFamily="Open Sans" Id="7c368f4c-2613-46e3-8367-d7253e51e823" Panel.Bounds="214,53,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="8c7af992-5069-4943-80ea-959674bc946e">
+                            <Add.Item>
+                                <TextArea Text="Hello,&#xA;I am following up to see if I may be of further assistance or if this case may be marked as resolved.&#xA;I will keep your case active for one week and if I haven't heard from you I will go ahead and mark this case as resolved." Border="#FFFFFFFF" FontSize="12" FontFamily="Open Sans" Id="c4fd0966-eb9e-48da-b362-fd44fb18aa6c" Panel.Bounds="10,85,357{5,2147483647},88{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </ScreenPart.Scenes>
+</ScreenPart>

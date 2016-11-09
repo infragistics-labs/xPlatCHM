@@ -1,0 +1,137 @@
+<?Infragistics.Models format="xaml" version="3" appVersion="7.0.3000.36"?>
+<ScreenPart xmlns="http://prototypes.infragistics.com/"
+                                                                                        xmlns:d="http://prototypes.infragistics.com/views/design"
+                                                                                        xmlns:i="http://prototypes.infragistics.com/ios7/"
+                                                                                        Id="b182ad2f-c160-4f69-aa89-32b3e89cead8" d:Design.ShowGuides="False">
+    <ScreenPart.Content>
+        <BorderedContent Width="375" Height="647" Background="#00FFFFFF" Id="2d887c73-f2b2-4680-95e8-32f968b8d28b">
+            <BorderedContent.Layers>
+                <Layer Id="3e889ff6-8231-4f05-a36b-0b47aefd33eb" Panel.Layout="Stretch" />
+                <AnnotationsLayer Id="b7ff0712-04b9-485e-9e55-bd93f5a5be86" Panel.Layout="Stretch" />
+            </BorderedContent.Layers>
+            <BorderedContent.Viewbox>
+                <Viewbox Id="12cb6eaf-7fce-4f81-bf1a-cb68df69f593" />
+            </BorderedContent.Viewbox>
+            <BorderedContent.GuidesInfo>
+                <GuidesInfo Id="c669d90c-d825-465c-8c7c-44f4f5486f98" />
+            </BorderedContent.GuidesInfo>
+        </BorderedContent>
+    </ScreenPart.Content>
+    <ScreenPart.Device>
+        <DeviceInfo Id="none" Orientation="None" />
+    </ScreenPart.Device>
+    <ScreenPart.Scenes>
+        <Scene Title="Initial state" Created="10/25/2016 10:32:23" Id="fcaedcf4-fe0c-4dd2-bf28-8255f083bfb2">
+            <Scene.KeyFrames>
+                <KeyFrame Id="94737134-44ec-44a2-a503-8756e86b89de">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <Rectangle Id="ccd38c69-70f6-4534-927d-7d00ad80f060" Panel.Bounds="0,0,375{5,2147483647},647{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <i:Header Text="New Message" FontSize="16" FontFamily="Open Sans" Id="de18f5ff-0dc5-4ea9-a18e-42242c8911c8" Panel.Bounds="0,0,375{5,2147483647},45{20,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <i:Button Text="Cancel" Background="#00FFFFFF" FontSize="14" FontFamily="Open Sans" Id="92c39e2e-364d-4b98-8fbc-3850ced162ae" Panel.Bounds="0,7,65{16,2147483647},30{16,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <i:Button Text="Send" Background="#00FFFFFF" Foreground="#FFAAAAAA" FontSize="14" FontFamily="Open Sans" FontStyle="Bold" Id="6ecb4167-0c3e-4e1c-b8e4-4b5a253766ae" Panel.Bounds="318,7,57{16,2147483647},30{16,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <i:Label RichText="To:  &lt;Run Foreground=&quot;#FF000000&quot; &gt;nadeem@skynet.org&lt;/Run&gt;" Foreground="#FF8D8D8D" FontFamily="Open Sans" Id="0ae685e5-d24b-4155-8dda-7abf78b6e075" Panel.Bounds="14,60,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <Line Thickness="1" Color="#FFAAAAAA" Background="#00FFFFFF" Id="a15c464a-d36c-4ccf-954d-87149e9ed7b0" Panel.Bounds="14,95,348{1,2147483647},3{1,2147483647}">
+                                    <Line.StartPoint>
+                                        <Point Id="ddfd7cd6-9107-4921-9e5f-ceef3e624c63" />
+                                    </Line.StartPoint>
+                                    <Line.Segments>
+                                        <Segment Id="7812789b-8514-4a2a-82bb-0dc0424a4032">
+                                            <Segment.EndPoint>
+                                                <Point X="348" Id="bbbb9e12-4491-45dc-bfd1-5b174ca9d8e2" />
+                                            </Segment.EndPoint>
+                                        </Segment>
+                                    </Line.Segments>
+                                </Line>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <i:Label RichText="Cc/Bcc:" Foreground="#FF8D8D8D" FontFamily="Open Sans" Id="c04fd64b-3fa9-4809-9b11-6c454abbae75" Panel.Bounds="14,110,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <Line Thickness="1" Color="#FFAAAAAA" Background="#00FFFFFF" Id="6eb956ce-07f6-4194-adb5-f54ebc71719b" Panel.Bounds="14,145,348{1,2147483647},3{1,2147483647}">
+                                    <Line.StartPoint>
+                                        <Point Id="9a3dcbb2-82d4-4bb1-af9e-846e9004f904" />
+                                    </Line.StartPoint>
+                                    <Line.Segments>
+                                        <Segment Id="eb130d0f-bbb8-4eb5-87cf-eea5075c3c58">
+                                            <Segment.EndPoint>
+                                                <Point X="348" Id="f7c63f12-864d-4345-83c0-339c9cbaf964" />
+                                            </Segment.EndPoint>
+                                        </Segment>
+                                    </Line.Segments>
+                                </Line>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <i:Label RichText="Subject:  &lt;Run Foreground=&quot;#FF000000&quot; &gt;Re: Follow Up&lt;/Run&gt;" Foreground="#FF8D8D8D" FontFamily="Open Sans" Id="c059d0f4-3478-423c-a1d9-55ceb5ee65c0" Panel.Bounds="14,160,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <Line Thickness="1" Color="#FFAAAAAA" Background="#00FFFFFF" Id="521248c0-db68-4357-9508-1c0af83e1b10" Panel.Bounds="14,195,348{1,2147483647},3{1,2147483647}">
+                                    <Line.StartPoint>
+                                        <Point Id="7b555297-f9a0-4e18-af30-c71860ca91de" />
+                                    </Line.StartPoint>
+                                    <Line.Segments>
+                                        <Segment Id="c4091dc8-bca6-4c79-874a-4fd9fc2f6ba7">
+                                            <Segment.EndPoint>
+                                                <Point X="348" Id="98598da4-8e67-40b6-9283-9ff86a0ce76f" />
+                                            </Segment.EndPoint>
+                                        </Segment>
+                                    </Line.Segments>
+                                </Line>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <i:Label RichText="&lt;Run Foreground=&quot;#FF000000&quot; &gt;&#xD;&#xA;&lt;/Run&gt;&lt;Run Foreground=&quot;#FF000000&quot; &gt;&#xD;&#xA;&lt;/Run&gt;&lt;Run Foreground=&quot;#FF000000&quot; &gt;Regards,&#xD;&#xA;&lt;/Run&gt;&lt;Run Foreground=&quot;#FF000000&quot; &gt;Zhivko Nikolov&#xD;&#xA;&lt;/Run&gt;&lt;Run Foreground=&quot;#FF000000&quot; &gt;Developer @ Infragistics&lt;/Run&gt;" Foreground="#FF8D8D8D" FontFamily="Open Sans" Id="998c7b50-a505-4636-827c-723e062bc288" Panel.Bounds="14,214,348{5,2147483647},125{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="3e889ff6-8231-4f05-a36b-0b47aefd33eb">
+                            <Add.Item>
+                                <Line Thickness="2" RotationAngle="90" Color="#FF000000" Background="#00FFFFFF" Id="a526b5d7-5e52-4a11-a983-64b73cb7ab29" Panel.Bounds="14,212,3,20">
+                                    <Line.StartPoint>
+                                        <Point X="10" Y="-10" Id="715af023-8e00-4ca4-89a8-119c3c909408" />
+                                    </Line.StartPoint>
+                                    <Line.Segments>
+                                        <Segment Id="c9ec71d8-441c-4c68-a149-29c2a7e634a9">
+                                            <Segment.EndPoint>
+                                                <Point X="10" Y="10" Id="9ec5cd7e-72b5-4125-8467-41b924cd78b8" />
+                                            </Segment.EndPoint>
+                                        </Segment>
+                                    </Line.Segments>
+                                </Line>
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </ScreenPart.Scenes>
+</ScreenPart>
